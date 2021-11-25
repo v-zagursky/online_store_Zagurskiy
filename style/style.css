@@ -720,6 +720,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 66px;
 }
 
 .registration_form {
@@ -816,6 +817,10 @@ a {
   font-size: 14px;
   line-height: 17px;
   margin-bottom: 96px;
+}
+
+.registration_submit:hover {
+  background-color: #e06d7f;
 }
 
 .arrow_right {

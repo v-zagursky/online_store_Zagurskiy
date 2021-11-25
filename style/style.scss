@@ -610,6 +610,7 @@ a {
 .rigistration_conteiner {
 	display: flex;
 	justify-content: space-between;
+	padding-top: 66px;
 }
 
 //Форма регистрации
@@ -670,6 +671,9 @@ a {
 	font-size: 14px;
 	line-height: 17px;
 	margin-bottom: 96px;
+}
+.registration_submit:hover {
+	background-color: $main_style_color - #100;
 }
 .arrow_right {
 	margin-left: 20px;
