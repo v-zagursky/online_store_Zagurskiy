@@ -85,13 +85,17 @@ a {
 	margin-right: 40px;
 	height: 44px;
 }
+.header_icon {
+	fill: white;
+}
 
 .search_button {
 	@include btn_properties_reset();
-	color: white;
+	cursor: pointer;
 	font-size: 22px;
 }
-.search_button:hover {
+.header_icon:hover {
+	fill: $main_style_color;
 	color: $main_style_color;
 	transition: 0.3s;
 }
@@ -99,6 +103,7 @@ a {
 	@include btn_properties_reset();
 	color: white;
 	font-size: 32px;
+	cursor: pointer;
 }
 .main_menu_button:hover {
 	color: $main_style_color;
@@ -256,7 +261,54 @@ a {
 .product_item {
 	width: 360px;
 	background: #f8f8f8;
+	position: relative;
 	/*margin-bottom: 32px;*/
+}
+.overlay {
+	background: rgba(58, 56, 56, 0.86);
+	width: 360px;
+	height: 420px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: scale(0);
+	opacity: 0;
+	transition: all 0.3s;
+	transform-origin: left top;
+}
+.add_cart_btn {
+	@include btn_properties_reset();
+	border: 1px solid white;
+	color: white;
+	display: flex;
+	align-items: center;
+	padding: 8px 16px;
+	font-size: 14px;
+	line-height: 17px;
+	cursor: pointer;
+	fill: white;
+}
+
+.add_cart_btn svg {
+	margin-right: 11px;
+}
+.add_cart_btn:active {
+	background-color: $main_style_color;
+	border-color: $main_style_color;
+}
+// @keyframes amin {
+// 	10%{translate: -430px; }
+// 	100%{translate: -1000px; transform:scale(0) skewY(20) }
+// }
+// .add_cart_btn:active .product_item {
+// 	animation: anim 1s  0.3s 1;
+// }
+.product_item:hover .overlay {
+	transform: scale(1);
+	opacity: 1;
 }
 .product_img {
 	width: 360px;
@@ -1000,4 +1052,5 @@ a {
 	background-color: $main_style_color -#100;
 	transition: 0.3s;
 }
+
 /*# sourceMappingURL=style.css.map */
