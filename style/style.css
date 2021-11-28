@@ -1170,7 +1170,9 @@ a {
   line-height: 26px;
 }
 
-.properties_color, .properties_price,
+.properties_quantity,
+.properties_color,
+.properties_price,
 .properties_size:focus {
   outline: 0;
   outline-offset: 0;
