@@ -319,15 +319,25 @@ a {
   line-height: 17px;
   cursor: pointer;
   fill: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .add_cart_btn svg {
   margin-right: 11px;
 }
 
+.add_cart_btn:hover {
+  color: #f16d7f;
+  border-color: #f16d7f;
+  fill: #f16d7f;
+}
+
 .add_cart_btn:active {
   background-color: #f16d7f;
   border-color: #f16d7f;
+  color: white;
+  fill: white;
 }
 
 .product_item:hover .overlay {
@@ -637,16 +647,6 @@ a {
   display: flex;
 }
 
-.title_nav_link {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  color: #636363;
-  text-transform: uppercase;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
 .title_nav_item::before {
   content: "/";
   margin: 0 3px;
@@ -658,6 +658,21 @@ a {
 
 .title_nav_item:first-child::before {
   display: none;
+}
+
+.title_nav_link {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.title_nav_link[href]:hover {
+  text-decoration: underline;
+  color: #f16d7f;
 }
 
 .current_link {
@@ -672,13 +687,6 @@ a {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-}
-
-.title_nav_link[href]:hover {
-  text-decoration: underline;
-  color: #f16d7f;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .filter_conteiner {
