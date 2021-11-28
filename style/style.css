@@ -684,17 +684,99 @@ a {
 .filter_conteiner {
   margin-top: 50px;
   margin-bottom: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+details {
+  list-style: none;
+  cursor: pointer;
+}
+
+details summary {
+  display: block;
+  margin-left: 16px;
+}
+
+details[open] > summary {
+  color: #f16d7f;
 }
 
 .filter {
-  display: inline-block;
   width: 360px;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   color: #000000;
   text-transform: uppercase;
-  margin-left: 16px;
+  padding: 13px 0px;
+  position: relative;
+}
+
+.filter_content {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 360px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  background-color: #fff;
+  -webkit-box-shadow: 6px 35px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 35px 35px rgba(0, 0, 0, 0.21);
+}
+
+.filter_title > summary {
+  border-bottom: 1px solid #ebebeb;
+  border-left: 5px solid #f16d7f;
+  padding-left: 10px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-top: 16px;
+}
+
+.filter_list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  padding-left: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  margin: 22px 0;
+}
+
+.filter_item {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  color: #6f6e6e;
+  text-transform: none;
+}
+
+.filter_link {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.filter_link:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #f16d7f;
+          text-decoration-color: #f16d7f;
+  color: #f16d7f;
+}
+
+.filter[open] {
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
 .filter_icon {
@@ -703,7 +785,7 @@ a {
   vertical-align: -0.125em;
 }
 
-.fitler_caregory {
+.fitler_category {
   display: inline-block;
   margin-left: 30px;
   font-size: 14px;
