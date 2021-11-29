@@ -803,6 +803,8 @@
           justify-content: center;
   text-decoration: none;
   color: inherit;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .socials_link:hover {
