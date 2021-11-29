@@ -1,0 +1,17 @@
+.title {
+	background-color: #f8f3f4;
+	//margin-bottom: 50px;
+}
+.title_conteiner {
+	padding: 60px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.title_heading {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+	text-transform: uppercase;
+	color: $main_style_color;
+}

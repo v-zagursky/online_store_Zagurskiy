@@ -1,0 +1,124 @@
+.cart_conteiner {
+	padding-top: 96px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 128px;
+}
+.cart_products {
+	max-width: 652px;
+}
+
+.cart_list {
+	@include list_style();
+}
+.cart_item {
+	display: flex;
+	position: relative;
+	margin-bottom: 40px;
+	transition: box-shadow 0.3s;
+}
+.cart_item:hover {
+	box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.25);
+}
+.close_icon {
+	@include btn_properties_reset();
+	position: absolute;
+	right: 22px;
+	top: 22px;
+	font-size: 34px;
+	line-height: 30px;
+	transition: 0.3s;
+}
+.close_icon:hover {
+	color: $main_style_color;
+}
+.cart_item_img {
+	height: 306px;
+}
+.cart_item_content {
+	padding: 22px 150px 22px 31px;
+}
+.cart_item_heading {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+	color: #222222;
+	padding-bottom: 42px;
+}
+.item_properties_form {
+	max-width: 210px;
+}
+.properties {
+	margin-bottom: 6px;
+	font-size: 22px;
+	line-height: 26px;
+	color: #575757;
+	display: flex;
+	align-items: baseline;
+}
+.properties select {
+	appearance: none;
+}
+.properties_price {
+	color: $main_style_color;
+	border: none;
+	font-size: 22px;
+	line-height: 26px;
+	margin-left: 10px;
+}
+.properties_quantity {
+	border: 1px solid #eaeaea;
+	margin-left: 24px;
+	padding: 2px 0px;
+	// vertical-align: baseline;
+	color: #656565;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+}
+.properties_color,
+.properties_size {
+	color: #656565;
+	margin-left: 10px;
+	border: none;
+	font-size: 22px;
+	line-height: 26px;
+}
+.properties_quantity,
+.properties_color,
+.properties_price,
+.properties_size:focus {
+	outline: 0;
+	outline-offset: 0;
+}
+.properties_color,
+.properties_size:hover {
+	cursor: pointer;
+}
+
+//Кнопки действия  в корзине
+.cart_action {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 72px;
+}
+.cart_action_btn {
+	@include btn_properties_reset();
+	border: 1px solid #a4a4a4;
+	padding: 17px 39px;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 17px;
+	color: #000000;
+	text-transform: uppercase;
+	transition: 0.3s;
+}
+.cart_action_btn:hover {
+	animation: rotate_btn 0.9s normal;
+	border-color: $main_style_color;
+	color: $main_style_color;
+}
+.cart_action_btn:active {
+	color: white;
+	background-color: $main_style_color;
+}
