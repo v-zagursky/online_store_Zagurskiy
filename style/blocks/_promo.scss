@@ -29,7 +29,8 @@
 	text-transform: uppercase;
 	border-left: 12px solid $main_style_color;
 	padding-left: 16px;
-	margin-right: 100px;
+// margin-right: 100px;
+	margin-right: $margin_right_hading;
 }
 
 .text_main_heading {

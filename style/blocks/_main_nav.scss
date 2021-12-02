@@ -11,6 +11,7 @@
 	opacity: 0;
 	transition: all 0.3s;
 	transform-origin: right top;
+	z-index: 5;
 	&_wrapper {
 		position: relative;
 	}
@@ -72,6 +73,7 @@ input[id="menu_open"]:checked ~ .main_nav {
 	color: #000000;
 	font-size: 20px;
 	transition: color 0.3s;
+	z-index: 6;
 	:hover {
 		color: $main_style_color;
 	}

@@ -41,7 +41,6 @@
 .header_icon:hover {
 	fill: $main_style_color;
 	color: $main_style_color;
-	
 }
 .main_menu_button {
 	@include btn_properties_reset();
@@ -52,7 +51,6 @@
 }
 .main_menu_button:hover {
 	color: $main_style_color;
-	
 }
 
 .header_right_link {

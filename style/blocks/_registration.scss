@@ -92,6 +92,22 @@
 }
 .loyalty_item {
 	margin-bottom: 16px;
+	background-image: url(../img/icons/check.svg);
+	background-repeat: no-repeat;
+	background-size: 20px;
+	padding-left: 40px;
+	background-position-y: center;
+	// list-style-image: url(../img/icons/check.svg);
+// 	&::before {
+// 		content: "";
+// 		background-image: url(../img/icons/check.svg);
+// 		display: inline-block;
+// background-repeat: no-repeat;
+// 		width:  20px;
+// 		height: 20px;
+
+// 		padding-left: 20px;
+// 	}
 }
 .check_icon {
 	margin-right: 23px;
