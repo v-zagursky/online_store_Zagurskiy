@@ -188,6 +188,7 @@
 
 .header {
   background-color: #222222;
+  position: relative;
 }
 
 .header_conteiner {
@@ -260,6 +261,110 @@
 }
 
 .header_right_link:hover {
+  color: #f16d7f;
+}
+
+.main_nav {
+  position: absolute;
+  right: 0;
+  top: 83.56px;
+  padding: 33px;
+  background-color: #fff;
+  width: 232px;
+  min-height: 764px;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+}
+
+.main_nav_wrapper {
+  position: relative;
+}
+
+.main_nav_heading {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.main_nav_list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.main_nav_link {
+  text-decoration: none;
+  color: inherit;
+  color: #f16d7f;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.main_nav_link:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #f16d7f;
+          text-decoration-color: #f16d7f;
+}
+
+.main_nav_sub_list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.main_nav_sub_list_item {
+  padding-bottom: 11px;
+}
+
+.main_nav_sub_list_link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.main_nav_sub_list_link:hover {
+  color: #f16d7f;
+  -webkit-text-decoration-color: #f16d7f;
+          text-decoration-color: #f16d7f;
+  text-decoration: underline;
+}
+
+input[id="menu_open"]:checked ~ .main_nav {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  opacity: 1;
+}
+
+.menu_close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #000000;
+  font-size: 20px;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.menu_close :hover {
   color: #f16d7f;
 }
 

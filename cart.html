@@ -87,17 +87,19 @@
 								<form class="item_properties_form" action="#" name="product_properties">
 									<label class="properties">Price:<input class="properties_price" type="text"
 											name="price" value="$300" readonly> </label>
-									<label class="properties"> Color: <select class="properties_size"
-										name="color"><option value="red" class="properties_color">Red</option>
-										<option value="blue" class="properties_color">Blue</option>
-										<option value="yellow" class="properties_color">Yellow</option>
-										<option value="black" class="properties_color">black</option></select> </label>
-									<label class="properties">Size: <select class="properties_color"
-										name="size"><option value="S" class="properties_color">S</option>
-										<option value="M" class="properties_color">M</option>
-										<option value="Xl" class="properties_color" selected>XL</option>
-										<option value="XXL" class="properties_color">XXL</option></select>
-										 </label>
+									<label class="properties"> Color: <select class="properties_size" name="color">
+											<option value="red" class="properties_color">Red</option>
+											<option value="blue" class="properties_color">Blue</option>
+											<option value="yellow" class="properties_color">Yellow</option>
+											<option value="black" class="properties_color">black</option>
+										</select> </label>
+									<label class="properties">Size: <select class="properties_color" name="size">
+											<option value="S" class="properties_color">S</option>
+											<option value="M" class="properties_color">M</option>
+											<option value="Xl" class="properties_color" selected>XL</option>
+											<option value="XXL" class="properties_color">XXL</option>
+										</select>
+									</label>
 									<label class="properties">Quantity: <input class="properties_quantity" type="number"
 											min="1" max="99" placeholder="2" required>
 									</label>
@@ -112,17 +114,19 @@
 								<form class="item_properties_form" action="#" name="product_properties">
 									<label class="properties">Price:<input class="properties_price" type="text"
 											name="price" value="$300" readonly> </label>
-									<label class="properties"> Color: <select class="properties_size"
-										name="color"><option value="red" class="properties_color">Red</option>
-										<option value="blue" class="properties_color">Blue</option>
-										<option value="yellow" class="properties_color">Yellow</option>
-										<option value="black" class="properties_color">black</option></select> </label>
-									<label class="properties">Size: <select class="properties_color"
-										name="size"><option value="S" class="properties_color">S</option>
-										<option value="M" class="properties_color">M</option>
-										<option value="Xl" class="properties_color" selected>XL</option>
-										<option value="XXL" class="properties_color">XXL</option></select>
-										 </label>
+									<label class="properties"> Color: <select class="properties_size" name="color">
+											<option value="red" class="properties_color">Red</option>
+											<option value="blue" class="properties_color">Blue</option>
+											<option value="yellow" class="properties_color">Yellow</option>
+											<option value="black" class="properties_color">black</option>
+										</select> </label>
+									<label class="properties">Size: <select class="properties_color" name="size">
+											<option value="S" class="properties_color">S</option>
+											<option value="M" class="properties_color">M</option>
+											<option value="Xl" class="properties_color" selected>XL</option>
+											<option value="XXL" class="properties_color">XXL</option>
+										</select>
+									</label>
 									<label class="properties">Quantity: <input class="properties_quantity" type="number"
 											min="1" max="99" placeholder="2" required>
 									</label>
@@ -138,11 +142,10 @@
 					<h2 class="hidden">Оформление покупки</h2>
 					<form class="shipping_form" action="#">
 						<h3 class="shipping_heading">SHIPPING ADRESS</h3>
-						<input class="shipping_input" type="text" name="country" id="" placeholder="Bangladesh"
-							required>
-						<input class="shipping_input" type="text" name="state" id="" placeholder="State" required>
-						<input class="shipping_input" type="number" name="zip" id="" placeholder="Postcode / Zip"
-							required minlength="6">
+						<input class="shipping_input" type="text" name="country" placeholder="Bangladesh" required>
+						<input class="shipping_input" type="text" name="state" placeholder="State" required>
+						<input class="shipping_input" type="number" name="zip" placeholder="Postcode / Zip" required
+							min="111111" max="999999">
 						<input class="shipping_submit" type="submit" value="GET A QUOTE">
 
 					</form>

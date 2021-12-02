@@ -36,8 +36,9 @@
 								alt="Search">-->
 						</button>
 					</div>
-					<nav class="header_right">
-						<button class="main_menu_button" type="button">
+					<div class="header_right">
+						<input type="checkbox" class="hidden" name="menu_open" id="menu_open">
+						<label for="menu_open" class="main_menu_button">
 							<svg class="header_icon" width="32" height="23" viewBox="0 0 32 23"
 								xmlns="http://www.w3.org/2000/svg">
 								<path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" />
@@ -45,7 +46,63 @@
 							<!-- <i class="bi bi-list"></i> -->
 							<!--<img class="menu_icon" src="img/menu.svg" alt="menu">-->
 							<!-- <i class="fas fa-bars"></i> -->
-						</button>
+						</label>
+
+
+						<nav class="main_nav">
+							<div class="main_menu_wrapper">
+								<label class="menu_close" for="menu_open"><i class="bi bi-x "></i></label>
+								<p class="main_nav_heading">MENU</p>
+								<ul class="main_nav_list">
+									<li class="main_nav_item">
+										<a href="#" class="main_nav_link">men</a>
+										<ul class="main_nav_sub_list">
+											<li class="main_nav_sub_list_item"><a href="#"
+													class="main_nav_sub_list_link">Accessories</a> </li>
+											<li class="main_nav_sub_list_item"><a href="#"
+													class="main_nav_sub_list_link">Bags</a> </li>
+											<li class="main_nav_sub_list_item"><a href="#"
+													class="main_nav_sub_list_link">Denim</a> </li>
+											<li class="main_nav_sub_list_item"><a href="#"
+													class="main_nav_sub_list_link">T-shirts</a> </li>
+										</ul>
+									</li>
+									<li class="main_nav_item">
+										<a href="#" class="main_nav_link">women</a>
+										<ul class="main_nav_sub_list">
+											<li class="main_nav_sub_list_item"><a href="#"
+													class="main_nav_sub_list_link">Accessories</a> </li>
+											<li class="main_nav_sub_list_item"><a href="#"
+													class="main_nav_sub_list_link">Jackets & Coats</a> </li>
+											<li class="main_nav_sub_list_item"><a href="#"
+													class="main_nav_sub_list_link">Polos</a> </li>
+											<li class="main_nav_sub_list_item"><a href="#"
+													class="main_nav_sub_list_link">T-shirts</a> </li>
+											<li class="main_nav_sub_list_item"><a href="#"
+													class="main_nav_sub_list_link">Shirts</a> </li>
+										</ul>
+									</li>
+									<li class="main_nav_item">
+										<a href="#" class="main_nav_link">kids</a>
+										<ul class="main_nav_sub_list">
+											<li class="main_nav_sub_list_item"><a href="#"
+													class="main_nav_sub_list_link">Accessories</a> </li>
+											<li class="main_nav_sub_list_item"><a href="#"
+													class="main_nav_sub_list_link">Jackets & Coats</a> </li>
+											<li class="main_nav_sub_list_item"><a href="#"
+													class="main_nav_sub_list_link">Polos</a> </li>
+											<li class="main_nav_sub_list_item"><a href="#"
+													class="main_nav_sub_list_link">T-shirts</a> </li>
+											<li class="main_nav_sub_list_item"><a href="#"
+													class="main_nav_sub_list_link">Shirts</a> </li>
+											<li class="main_nav_sub_list_item"><a href="#"
+													class="main_nav_sub_list_link">Bags</a> </li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+
+						</nav>
 						<a class="header_right_link" href="registration.html">
 							<svg class="header_icon" width="29" height="29" viewBox="0 0 29 29"
 								xmlns="http://www.w3.org/2000/svg">
@@ -67,7 +124,7 @@
 							<!-- <i class="bi bi-cart2"></i> -->
 							<!-- <img class="cart_icon" src="img/cart.svg" alt="cart"> -->
 						</a>
-					</nav>
+					</div>
 				</div>
 			</header>
 			<section class="promo">
