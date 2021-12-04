@@ -252,7 +252,7 @@ $margin_right_hading: (100px * 100%/1140px); //Отступ заголовка �
 //Блок покупки
 @import "blocks/cart_purchase";
 
-@media (max-width: 1172px) {
+@media (max-width: 1192px) {
 	.conteiner {
 		width: 100%;
 		padding-left: 16px;
@@ -430,7 +430,8 @@ $margin_right_hading: (100px * 100%/1140px); //Отступ заголовка �
 		padding-bottom: 64px;
 	}
 	.categories_container {
-		justify-content: center;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	.categories_item {
@@ -439,6 +440,7 @@ $margin_right_hading: (100px * 100%/1140px); //Отступ заголовка �
 	}
 	.accesories {
 		height: 111px;
+		width: 100%;
 	}
 	.products_text {
 		margin-bottom: 64px;
@@ -532,17 +534,16 @@ $margin_right_hading: (100px * 100%/1140px); //Отступ заголовка �
 
 	//Cart
 
-	.title_conteiner {
-		padding: 50px 0 70px 0;
-	}
 	.title_heading {
-		margin-bottom: 0px;
+		margin-bottom: 0;
+	}
+	.title_nav {
+		padding-top: 32px;
 	}
 	.cart_conteiner {
 		margin-bottom: 96px;
 	}
 	.cart_item {
-		width: 358px;
 		margin-bottom: 32px;
 	}
 	.close_icon {
