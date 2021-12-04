@@ -52,7 +52,9 @@
 .main_menu_button:hover {
 	color: $main_style_color;
 }
-
+.header_right_box {
+	display: flex;
+}
 .header_right_link {
 	margin-left: 32px;
 	color: white;

@@ -75,6 +75,7 @@
 	font-size: 18px;
 	line-height: 22px;
 	text-align: center;
+	width: 3em;
 }
 .properties_color,
 .properties_size {
@@ -87,9 +88,11 @@
 .properties_quantity,
 .properties_color,
 .properties_price,
+.properties_size,
 .properties_size:focus {
 	outline: 0;
 	outline-offset: 0;
+	background-color: transparent;
 }
 .properties_color,
 .properties_size:hover {

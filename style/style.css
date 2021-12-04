@@ -251,6 +251,12 @@
   color: #f16d7f;
 }
 
+.header_right_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .header_right_link {
   margin-left: 32px;
   color: white;
@@ -1742,6 +1748,7 @@ details {
   font-size: 18px;
   line-height: 22px;
   text-align: center;
+  width: 3em;
 }
 
 .properties_color,
@@ -1756,9 +1763,11 @@ details {
 .properties_quantity,
 .properties_color,
 .properties_price,
+.properties_size,
 .properties_size:focus {
   outline: 0;
   outline-offset: 0;
+  background-color: transparent;
 }
 
 .properties_color,
@@ -1940,7 +1949,7 @@ details {
   animation: slide-out-elliptic-top-bck 0.2s ease-in both;
 }
 
-@media (max-width: 1192px) {
+@media (max-width: 1171px) {
   .conteiner {
     width: 100%;
     padding-left: 16px;
