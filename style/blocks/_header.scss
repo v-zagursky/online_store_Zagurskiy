@@ -1,0 +1,67 @@
+.header {
+	background-color: #222222;
+	position: relative;
+}
+
+.header_conteiner {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	color: white;
+	padding: 18px 0;
+}
+
+.header_left,
+.header_right {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	@include a_properties_reset;
+}
+.logo_icon {
+	margin-right: 40px;
+	height: 44px;
+}
+.header_icon {
+	fill: white;
+	transition: 0.3s;
+}
+
+.search_button {
+	@include btn_properties_reset();
+	cursor: pointer;
+	font-size: 22px;
+}
+.header_icon:hover {
+	fill: $main_style_color;
+	color: $main_style_color;
+}
+.main_menu_button {
+	@include btn_properties_reset();
+	color: white;
+	font-size: 32px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.main_menu_button:hover {
+	color: $main_style_color;
+}
+.header_right_box {
+	display: flex;
+}
+.header_right_link {
+	margin-left: 32px;
+	color: white;
+	font-size: 30px;
+	line-height: 37px;
+	@include a_properties_reset;
+}
+.header_right_link:hover {
+	color: $main_style_color;
+}

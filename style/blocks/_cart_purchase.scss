@@ -1,0 +1,93 @@
+.purchase_box {
+	width: 360px;
+	padding-top: 12px;
+}
+.shipping_form {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 58px;
+}
+.shipping_heading {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 19px;
+	color: #222222;
+	margin-bottom: 23px;
+	text-transform: uppercase;
+}
+.shipping_input {
+	border: 1px solid #a4a4a4;
+	padding: 13px;
+	margin-bottom: 20px;
+}
+.shipping_input::placeholder {
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 16px;
+	color: #b1b1b1;
+}
+.shipping_submit {
+	@include btn_properties_reset();
+	width: 101px;
+	padding: 13px 0px;
+	border: 1px solid #a4a4a4;
+}
+.shipping_submit:hover {
+	border-color: $main_style_color;
+	color: $main_style_color;
+	transition: 0.3s;
+}
+.shipping_submit:active {
+	color: white;
+	background-color: $main_style_color;
+}
+
+// Блок оплаты
+.checkout {
+	background-color: #f5f3f3;
+	padding: 42px;
+	text-align: right;
+}
+.sub_total {
+	font-size: 11px;
+	line-height: 13px;
+	color: #4a4a4a;
+	text-transform: uppercase;
+	margin-bottom: 14px;
+}
+.sub_coast {
+	margin-left: 25px;
+}
+.grand_total {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 19px;
+	color: #222222;
+	text-transform: uppercase;
+	padding-bottom: 24px;
+	border-bottom: 1px solid #e2e2e2;
+	margin-bottom: 25px;
+}
+.grand_coast {
+	margin-left: 25px;
+	color: $main_style_color;
+	font-weight: bold;
+}
+.checkout_btn {
+	@include btn_properties_reset();
+	width: 100%;
+	color: white;
+	background-color: $main_style_color;
+	padding: 16px 0;
+	text-transform: uppercase;
+	&:hover {
+		background-color: $main_style_color -#100;
+		transition: 0.3s;
+		animation: none;
+		cursor: pointer;
+	}
+	&:active {
+		-webkit-animation: slide-out-elliptic-top-bck 0.2s ease-in both;
+		animation: slide-out-elliptic-top-bck 0.2s ease-in both;
+	}
+}

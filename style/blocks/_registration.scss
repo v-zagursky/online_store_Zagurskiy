@@ -1,0 +1,115 @@
+.rigistration_conteiner {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 66px;
+}
+
+//Форма регистрации
+.registration_form {
+	display: flex;
+	flex-direction: column;
+	width: 360px;
+}
+.label_name_reg_box {
+	margin-bottom: 22px;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 19px;
+	text-transform: capitalize;
+}
+.reg_box {
+	padding: 16px;
+	width: 100%;
+	margin-bottom: 20px;
+	border: 1px solid #a4a4a4;
+}
+.reg_box::placeholder {
+	text-transform: capitalize;
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 16px;
+	color: #b1b1b1;
+}
+.gender_box {
+	padding: 10px 0 33px 0;
+}
+.label_reg_gender {
+	font-weight: 300;
+	font-size: 11px;
+	line-height: 13px;
+	margin-right: 20px;
+	text-transform: capitalize;
+}
+.gender_radio {
+	margin-right: 10px;
+	vertical-align: baseline;
+}
+.password_description {
+	margin-top: -5px;
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 16px;
+	color: #b1b1b1;
+	margin-bottom: 39px;
+}
+.registration_submit {
+	width: 170px;
+	padding: 20px 30px;
+	border: none;
+	background-color: $main_style_color;
+	color: white;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 17px;
+	margin-bottom: 96px;
+}
+.registration_submit:hover {
+	background-color: $main_style_color - #100;
+}
+.arrow_right {
+	margin-left: 20px;
+}
+
+//Лояльности на регистрации
+.loyalty {
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 29px;
+	max-width: 652px;
+}
+.loyalti_heading {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 29px;
+	margin-bottom: 22px;
+}
+.loyalty_description {
+	margin-bottom: 21px;
+}
+.loyalty_list {
+	list-style-type: none;
+}
+.loyalty_item {
+	margin-bottom: 16px;
+	background-image: url(../img/icons/check.svg);
+	background-repeat: no-repeat;
+	background-size: 20px;
+	padding-left: 40px;
+	background-position-y: center;
+	// list-style-image: url(../img/icons/check.svg);
+// 	&::before {
+// 		content: "";
+// 		background-image: url(../img/icons/check.svg);
+// 		display: inline-block;
+// background-repeat: no-repeat;
+// 		width:  20px;
+// 		height: 20px;
+
+// 		padding-left: 20px;
+// 	}
+}
+.check_icon {
+	margin-right: 23px;
+	font-size: 30px;
+}

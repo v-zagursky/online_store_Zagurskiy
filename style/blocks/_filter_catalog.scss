@@ -1,0 +1,221 @@
+.filter_conteiner {
+	margin-top: 50px;
+	margin-bottom: 64px;
+	display: flex;
+	align-items: center;
+}
+details {
+	list-style: none;
+}
+// .filter summary::-webkit-details-marker {
+// 		display: none;
+//   }
+.filter summary {
+	display: block;
+	margin-left: 16px;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+.filter[open] > summary {
+	color: $main_style_color;
+}
+
+.filter {
+	// display: inline-block;
+	width: 360px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	color: #000000;
+	text-transform: uppercase;
+	padding: 13px 0px;
+	position: relative;
+
+	&_content {
+		position: absolute;
+		left: 0;
+		z-index: 1;
+		width: 360px;
+		padding-right: 16px;
+		padding-bottom: 16px;
+		background-color: #fff;
+		box-shadow: 6px 35px 35px rgba(0, 0, 0, 0.21);
+	}
+	&_title > summary {
+		border-bottom: 1px solid #ebebeb;
+		border-left: 5px solid $main_style_color;
+		padding-left: 10px;
+		padding-top: 14px;
+		padding-bottom: 14px;
+		margin-top: 16px;
+	}
+	&_list {
+		@include list_style();
+		padding-left: 32px;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		margin: 22px 0;
+	}
+	&_item {
+		font-size: 14px;
+		line-height: 17px;
+		font-weight: 400;
+		color: #6f6e6e;
+		text-transform: none;
+	}
+	&_link {
+		transition: all 0.3s;
+		@include a_properties_reset;
+	}
+	&_link:hover {
+		text-decoration: underline;
+		text-decoration-color: $main_style_color;
+		color: $main_style_color;
+	}
+	& summary:hover {
+		color: $main_style_color;
+	}
+}
+.filter[open] {
+	box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.filter_icon {
+	padding-right: 10px;
+	font-size: 17px;
+	vertical-align: -0.125em;
+}
+
+.filter_trending {
+	display: inline-block;
+	margin-left: 30px;
+	font-size: 14px;
+	line-height: 17px;
+	color: #6f6e6e;
+	text-transform: uppercase;
+	list-style: none;
+	position: relative;
+
+	& summary {
+		display: block;
+		transition: 0.3s;
+		cursor: pointer;
+	}
+	& summary:hover {
+		color: $main_style_color;
+	}
+	&_list {
+		width: 135px;
+		position: absolute;
+		left: 0;
+		@include list_style();
+		box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+		margin-top: 8px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		padding: 10px;
+		z-index: 1;
+		background-color: #fff;
+	}
+	&_item {
+		cursor: pointer;
+	}
+}
+.filter_size {
+	position: relative;
+	list-style: none;
+	font-size: 14px;
+	line-height: 17px;
+	color: #6f6e6e;
+	text-transform: uppercase;
+	margin-left: 28px;
+
+	& summary {
+		display: block;
+		transition: 0.3s;
+		cursor: pointer;
+	}
+	& summary:hover {
+		color: $main_style_color;
+	}
+
+	&_form {
+		position: absolute;
+		box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+		z-index: 1;
+		background-color: #fff;
+		display: flex;
+		flex-direction: column;
+		margin-left: -10px;
+		width: 79px;
+		padding: 10px;
+		margin-top: 8px;
+		gap: 10px;
+		font-size: 14px;
+		line-height: 16px;
+		color: #6f6e6e;
+		text-transform: uppercase;
+		& label {
+			cursor: pointer;
+		}
+		& input {
+			border-color: #ebebeb;
+			margin-right: 9px;
+			display: none;
+		}
+		& label::before {
+			content: "";
+			border: 1px solid #ebebeb;
+			margin-right: 9px;
+			width: 13px;
+			height: 13px;
+			display: inline-block;
+			vertical-align: baseline;
+			position: relative;
+		}
+		& input:checked + label:before {
+			content: "";
+			background-color: $main_style_color;
+		}
+	}
+}
+.filter_price {
+	position: relative;
+	list-style: none;
+	font-size: 14px;
+	line-height: 17px;
+	color: #6f6e6e;
+	text-transform: uppercase;
+	margin-left: 28px;
+	& summary {
+		cursor: pointer;
+		display: block;
+		transition: 0.3s;
+	}
+	& summary:hover {
+		color: $main_style_color;
+	}
+	&_list {
+		width: 80px;
+		position: absolute;
+		left: 0;
+		@include list_style();
+		box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+		margin-top: 8px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		padding: 10px;
+		z-index: 1;
+		background-color: #fff;
+	}
+	&_item {
+		cursor: pointer;
+	}
+}
+.chevron {
+	// margin-right: 28px;
+	margin-left: 10px;
+}

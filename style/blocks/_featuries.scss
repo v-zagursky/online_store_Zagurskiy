@@ -1,0 +1,42 @@
+.featuries {
+	background-color: #222224;
+}
+.featuries_conteiner {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 104px 0;
+}
+.featuries_items {
+	width: 360px;
+	text-align: center;
+}
+.delivery {
+	background: url(../img/delivery_icon.png) no-repeat;
+	background-position-y: top;
+	background-position-x: center;
+}
+.sales {
+	background: url(../img/sales_icon.png) no-repeat;
+	background-position-y: top;
+	background-position-x: center;
+}
+.quality {
+	background: url(../img/quality_icon.png) no-repeat;
+	background-position-y: top;
+	background-position-x: center;
+}
+.featuries_items_heading {
+	text-transform: capitalize;
+	padding-bottom: 16px;
+	padding-top: 60px;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	color: #fbfbfb;
+}
+.featuries_text {
+	color: #fbfbfb;
+	opacity: 0.7;
+}

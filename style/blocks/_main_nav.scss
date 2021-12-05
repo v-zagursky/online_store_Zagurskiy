@@ -1,0 +1,80 @@
+.main_nav {
+	position: absolute;
+	right: 0;
+	top: 83.56px;
+	padding: 33px;
+	background-color: #fff;
+	width: 232px;
+	min-height: 764px;
+	box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+	transform: scaleX(0);
+	opacity: 0;
+	transition: all 0.3s;
+	transform-origin: right top;
+	z-index: 5;
+	&_wrapper {
+		position: relative;
+	}
+	&_heading {
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 17px;
+		color: #000000;
+		margin-bottom: 24px;
+	}
+
+	&_list {
+		@include list_style();
+	}
+
+	&_link {
+		@include a_properties_reset();
+		color: $main_style_color;
+		text-transform: uppercase;
+		font-size: 14px;
+		line-height: 17px;
+		transition: all 0.3s;
+		&:hover {
+			text-decoration: underline;
+			text-decoration-color: $main_style_color;
+		}
+	}
+
+	&_sub_list {
+		@include list_style();
+		padding-left: 20px;
+		padding-top: 15px;
+		padding-bottom: 20px;
+		&_item {
+			padding-bottom: 11px;
+		}
+		&_link {
+			@include a_properties_reset();
+			font-size: 14px;
+			line-height: 17px;
+			color: #6f6e6e;
+			transition: all 0.3s;
+			&:hover {
+				color: $main_style_color;
+				text-decoration-color: $main_style_color;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+input[id="menu_open"]:checked ~ .main_nav {
+	transform: scaleX(1);
+	opacity: 1;
+}
+.menu_close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #000000;
+	font-size: 20px;
+	transition: color 0.3s;
+	z-index: 6;
+	:hover {
+		color: $main_style_color;
+	}
+}
