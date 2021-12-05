@@ -1670,9 +1670,6 @@ details {
   transition: -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s;
   transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
-}
-
-.cart_item:hover {
   -webkit-box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.25);
           box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.25);
 }
