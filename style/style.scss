@@ -376,7 +376,7 @@ $margin_right_hading: (100px * 100%/1140px); //Отступ заголовка �
 		width: 360px;
 		padding: 42px;
 		height: 214px;
-			}
+	}
 	//Registration
 	.rigistration_conteiner {
 		padding-top: 38px;
@@ -399,6 +399,7 @@ $margin_right_hading: (100px * 100%/1140px); //Отступ заголовка �
 	}
 	//main_menu
 	.header_right_box {
+		z-index: 10;
 		display: flex;
 		position: absolute;
 		right: 80px;

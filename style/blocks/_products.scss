@@ -97,7 +97,7 @@
 	transition: all 0.3s;
 }
 .product_img + a:hover > .product_text_box {
-	transform: scale(1.05);
+	// transform: scale(1.05);
 	background-color: inherit;
 	& > .product_heading {
 		text-decoration: underline;
