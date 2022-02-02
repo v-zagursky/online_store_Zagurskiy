@@ -100,15 +100,15 @@
 .table_item_cart_headding {
 	font-weight: bold;
 	border-bottom: 1px solid white;
-	}
+}
 .table_item_cart_row {
-		display: flex;
+	display: flex;
 	gap: 5px;
 	justify-content: space-between;
 	&:last-child {
 		border-top: 1px solid white;
-		}
 	}
+}
 .table_total_price {
 	font-size: 14px;
 	font-weight: bold;
